@@ -1,8 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router';
+import store from './store/index'
 
-import { IonicVue } from '@ionic/vue';
+import { IonicVue, IonPage, IonContent, IonButton, IonInput, IonText, IonIcon, IonImg, IonHeader, IonCard, IonCardHeader, IonCardContent, IonCardTitle, IonCardSubtitle } from '@ionic/vue';
+
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/vue/css/core.css';
@@ -25,8 +27,22 @@ import './theme/variables.css';
 
 const app = createApp(App)
   .use(IonicVue)
-  .use(router);
-  
+  .use(router)
+  .use(store)
+  .component('ion-page', IonPage)
+  .component('ion-content', IonContent)
+  .component('ion-button', IonButton)
+  .component('ion-input', IonInput)
+  .component('ion-text', IonText)
+  .component('ion-icon', IonIcon)
+  .component('ion-img', IonImg)
+  .component('ion-header', IonHeader)
+  .component('ion-card-header', IonCardHeader)
+  .component('ion-card', IonCard)
+  .component('ion-card-content', IonCardContent)
+  .component('ion-card-title', IonCardTitle)
+  .component('ion-card-subtitle', IonCardSubtitle)
+
 router.isReady().then(() => {
   app.mount('#app');
 });

@@ -1,9 +1,9 @@
 import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'com.jionstarting.app',
   appName: 'ionic-starting',
-  webDir: 'dist',
+  webDir: 'public',
   bundledWebRuntime: false
 };
 

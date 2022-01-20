@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">ionic-starting</string>
+    <string name="title_activity_main">ionic-starting</string>
+    <string name="package_name">com.jionstarting.app</string>
+    <string name="custom_url_scheme">com.jionstarting.app</string>
+</resources>
